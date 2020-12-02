@@ -1,0 +1,22 @@
+{
+  "name": "simpleapp",
+  "version": "1.0.0",
+  "description": "Just a test azure install",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grodas66/nodejs.git"
+  },
+  "author": "Gabe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grodas66/nodejs/issues"
+  },
+  "homepage": "https://github.com/grodas66/nodejs#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
