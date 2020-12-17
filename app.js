@@ -1,5 +1,5 @@
 const kvName = process.env['KEYVAULT_NAME'];
-const kvNameUri = 'https://" + kvName + ".vault.azure.net/';
+const kvNameUri = 'https://' + kvName + '.vault.azure.net/';
 const secretName = process.env['SECRET_NAME'];;
 
 
