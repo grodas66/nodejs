@@ -1,22 +1,36 @@
 {
-  "name": "simpleapp",
-  "version": "1.0.0",
-  "description": "Just a test azure install",
-  "main": "app.js",
+  "name": "key-vault-node-authentication",
+  "version": "0.1.0",
+  "description": "A sample demonstrating authentication to Key Vault in node.js",
+  "main": "authentication_sample.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "node",
+    "azure"
+  ],
+  "tags": [
+    "azure",
+    "sdk"
+  ],
+  "author": "Microsoft Corporation",
+  "contributors": [
+    "Desberg, David <david.desberg@microsoft.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "adal-node": "^0.1.28",
+    "azure-arm-keyvault": "^1.1.2",
+    "azure-arm-resource": "^3.1.1-preview",
+    "azure-keyvault": "^3.0.4"
+  },
+  "homepage": "https://github.com/Azure-Samples/key-vault-node-authentication",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/grodas66/nodejs.git"
+    "url": "https://github.com/Azure-Samples/key-vault-node-authentication"
   },
-  "author": "Gabe",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/grodas66/nodejs/issues"
-  },
-  "homepage": "https://github.com/grodas66/nodejs#readme",
-  "dependencies": {
-    "express": "^4.17.1"
+    "url": "https://github.com/Azure-Samples/key-vault-node-authentication/issues"
   }
 }
