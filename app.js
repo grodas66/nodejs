@@ -1,11 +1,16 @@
-var express = require("express");
-var app = express();
+const kvName = process.env['KEYVAULT_NAME'];
+const kvNameUri = 'https://" + kvName + ".vault.azure.net/';
+const secretName = process.env['SECRET_NAME'];;
 
 
-app.listen(3000, () => {
- console.log("Server running on port 3000");
-});
+const spSecretManagement =  require('./SPSecretManagement');
 
-app.get("/", (req, res, next) => {
- res.json(["Tony","Lisa","Michael","Ginger","Food"]);
+
+spSecretManagement.GetSecret(kvNameUri, secretName)
+.then( (result) => {
+    console.log(result);
+    
+})
+.catch( (err) => { 
+    console.log(err); 
 });
